@@ -44,6 +44,7 @@ async def process_buttons_press(callback: CallbackQuery):
     if len(anek_list) <= anek_counter:
         await callback.message.answer(text='Анеки по вашему запросу закончились')
     else:
+        await callback.message.edit_reply_markup()
         await callback.message.answer(
             text=str(anek_list[anek_counter]),
             reply_markup=keyboard
