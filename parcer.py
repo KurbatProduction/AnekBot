@@ -11,5 +11,10 @@ def parce(key_words):
     anek_list = soup.find_all('div', class_='text')
     anek_list_text = []
     for anek in anek_list:
-        anek_list_text.append(anek.text)
+        if len(anek.text) >= 4095:
+            continue
+        else:
+            anek_list_text.append(anek.text)
+    if not anek_list_text:
+        return None
     return anek_list_text
