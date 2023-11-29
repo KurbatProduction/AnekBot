@@ -38,8 +38,3 @@ def parce(key_words):
     if not anek_list_text:
         return None
     return anek_list_text
-
-list1 = parce('привет')
-for i in list1:
-    print(i)
-    print('-------------------------------------------------------------')
