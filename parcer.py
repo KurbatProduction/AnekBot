@@ -10,6 +10,8 @@ def process_text(text):
         '<div class="text">': '',
         '</div>': '',
         '.<br/>': "\n",
+        '!<br/>': "\n",
+        '?<br/>': "\n",
         '<br/>': " ",
         '<span style="background-color:#ffff80">': '',
         '</span>': '',
