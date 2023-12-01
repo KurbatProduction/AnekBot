@@ -12,10 +12,14 @@ def process_text(text):
         '.<br/>': ".\n",
         '!<br/>': "!\n",
         '?<br/>': "?\n",
-        ':<br/>': ":\n",
+        ':<br/> -': ":\n-",
+        ':<br/>-': ":\n-",
+        ':<br/>': ": ",
+        ', <br/>': ",",
+        ',<br/>': ",",
         '<br/>- ': "\n- ",
         '\n<br/>': "\n\n",
-        '<br/>': "\n",
+        '<br/>': "",
         '<span style="background-color:#ffff80">': '',
         '</span>': '',
     }
@@ -40,3 +44,7 @@ def parce(key_words):
     if not anek_list_text:
         return None
     return anek_list_text
+
+
+ar = parce('Как хочешь крутись')
+print(ar[1])
