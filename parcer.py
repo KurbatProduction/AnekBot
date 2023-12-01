@@ -44,7 +44,3 @@ def parce(key_words):
     if not anek_list_text:
         return None
     return anek_list_text
-
-
-ar = parce('Как хочешь крутись')
-print(ar[1])
