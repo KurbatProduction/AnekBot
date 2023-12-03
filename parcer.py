@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 URL_TEMPLATE_START = "https://www.anekdot.ru/search/?query="
-URL_TEMPLATE_END = "&ch%5Bj%5D=on&mode=any&xcnt=100&maxlen=&order=0"
+URL_TEMPLATE_END = "&ch%5Bj%5D=on&mode=any&xcnt=25&maxlen=&order=0"
 
 
 def process_text(text):
